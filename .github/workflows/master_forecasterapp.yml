@@ -39,6 +39,9 @@ jobs:
           path: |
             . 
             !venv/
+            
+      - name: Run Application
+        run: streamlit run app.py
 
   deploy:
     runs-on: ubuntu-latest
